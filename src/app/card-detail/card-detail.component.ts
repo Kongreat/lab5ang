@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Card } from '../shared/card';
 import { Cards } from '../shared/cards';
+import * as ntc from 'ntcjs';
 
 
 
@@ -16,15 +17,15 @@ export class CardDetailComponent implements OnInit {
   constructor() {
   }
 
-  getName(){
 
-  }
   ngOnInit(): void {
 
   }
 
   sendHex(event: any){
     this.card.hex = event.target.value;
+    const result = ntc.name(event.target.value);
+    this.card.name = result[1];
   }
 
   sendColor(event: any){

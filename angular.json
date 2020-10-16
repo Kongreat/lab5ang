@@ -28,7 +28,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "ntc.js"
+
             ]
           },
           "configurations": {
@@ -95,7 +95,6 @@
               "src/styles.css"
             ],
             "scripts": [
-              "ntc.js"
             ]
           }
         },
