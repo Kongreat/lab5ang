@@ -3,6 +3,7 @@ import { Card } from '../shared/card';
 import { Cards } from '../shared/cards';
 
 
+
 @Component({
   selector: 'app-card-detail',
   templateUrl: './card-detail.component.html',
@@ -14,13 +15,20 @@ export class CardDetailComponent implements OnInit {
   card: Card;
   constructor() {
   }
-  
 
+  getName(){
+
+  }
   ngOnInit(): void {
+
   }
 
   sendHex(event: any){
     this.card.hex = event.target.value;
+  }
+
+  sendColor(event: any){
+    this.card.name = event.target.value;
   }
 
 }

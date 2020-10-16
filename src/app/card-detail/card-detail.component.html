@@ -1,7 +1,8 @@
 <div class="main-card"  [ngStyle]="{'background-color': card.hex}">
-    <p>{{card.id}}</p>
-    <p>{{card.hex}}</p>
-    <p>{{card.name}}</p>
-    <input type="text" (keydown.enter) = "sendHex($event)" id="hex-inp">
+  <p>Id: {{card.id}}</p>
+  <p>Hex: {{card.hex}}</p>
+  <p>Color name: {{card.name}}</p>
+  <p>Hex:</p> <input type="text" (keydown.enter) = "sendHex($event)" placeholder={{card.hex}}>
+  <p>Color name: </p><input type="text" (keydown.enter) = "sendColor($event)" placeholder={{card.name}}>
 </div>
 
